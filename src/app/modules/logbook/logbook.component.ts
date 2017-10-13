@@ -9,6 +9,7 @@ import { LogbookService } from './logbook.service';
 export class LogbookComponent implements OnInit {
 
   public name = 'Logbook';
+  public logs = [ 5, 7, 9, 12, 17, 21092 ];
 
   constructor(private logbookService: LogbookService) { }
 
