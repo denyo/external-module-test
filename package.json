@@ -1,6 +1,6 @@
 {
-  "name": "logbook-app",
-  "version": "0.0.0",
+  "name": "module-package-test",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -8,9 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "package": "ng-packagr"
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "^5.1.0",
     "@angular/compiler": "^5.1.0",
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^5.1.0",
     "@angular/router": "^5.1.0",
     "core-js": "^2.4.1",
+    "ng-packagr": "^1.6.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
