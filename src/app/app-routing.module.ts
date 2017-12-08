@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingComponent } from 'app/pages/landing';
-import { LogbookEntrypoint } from 'app/modules/logbook';
+import { LogbookModule } from 'app/modules/logbook';
 
 const appRoutes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
-  { path: 'logbook', loadChildren: LogbookEntrypoint },
+  { path: 'logbook', loadChildren: 'app/modules/logbook#LogbookModule' },
   { path: '**', redirectTo: '/' },
 ];
 

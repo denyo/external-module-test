@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { LogbookComponent } from './logbook.component';
 import { LogbookChildComponent } from './logbook-child.component';
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule.forChild(appRoutes),
   ],
   declarations: [
@@ -26,11 +28,6 @@ const appRoutes: Routes = [
   exports: [
     LogbookComponent,
     LogbookChildComponent,
-    RouterModule,
   ],
 })
 export class LogbookModule { }
-
-export function LogbookEntrypoint() {
-  return LogbookModule;
-}
