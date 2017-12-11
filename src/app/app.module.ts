@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from 'app/app.component';
 import { LandingComponent } from 'app/pages/landing';
 import { AppRoutingModule } from 'app/app-routing.module';
-import { LogbookModule } from 'app/modules/logbook';
+import { LogbookModule } from 'app/modules/logbook/logbook.module';
 
 @NgModule({
   declarations: [
